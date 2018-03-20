@@ -3,11 +3,10 @@ applications:
 - name: acme-financial-back-office-microservice
   memory: 512M
   instances: 1
-  random-route: true
   path: build/libs/acme-financial-back-office-microservice-1.0.0.jar
   services:
     - zipkin_span_stream
   env:
     DEBUG: "true"
-    ACCOUNTMICROSERVICE_ADDRESS: acme-financial-account-microservice-uncancellable-sycosis.cfapps.io
-    CUSTOMERMICROSERVICE_ADDRESS: acme-financial-customer-microservice-unmouthed-precontract.cfapps.io
+    ACCOUNTMICROSERVICE_ADDRESS: acme-financial-account-microservice.aws.ie.a9sapp.eu
+    CUSTOMERMICROSERVICE_ADDRESS: acme-financial-customer-microservice.aws.ie.a9sapp.eu

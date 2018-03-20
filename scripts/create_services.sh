@@ -2,5 +2,5 @@
 
 set -e
 
-cf create-service p-mysql 100mb zipkin_mysql
-cf create-service cloudamqp lemur zipkin_span_stream
+cf create-service a9s-postgresql postgresql-single-small zipkin_db
+cf create-service a9s-rabbitmq single-small zipkin_span_stream

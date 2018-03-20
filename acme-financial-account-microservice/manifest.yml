@@ -3,7 +3,6 @@ applications:
 - name: acme-financial-account-microservice
   memory: 512M
   instances: 1
-  random-route: true
   path: build/libs/acme-financial-account-microservice-1.0.0.jar
   services:
     - zipkin_span_stream

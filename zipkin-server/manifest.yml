@@ -3,10 +3,9 @@ applications:
 - name: zipkin-server
   memory: 512M
   instances: 1
-  random-route: true
   path: build/libs/zipkin-server-1.0.0.jar
   services:
     - zipkin_span_stream
-    - zipkin_mysql
+    - zipkin_db
   env:
     DEBUG: "true"

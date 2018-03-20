@@ -3,10 +3,9 @@ applications:
 - name: acme-financial-ui
   memory: 512M
   instances: 1
-  random-route: true
   path: build/libs/acme-financial-ui-1.0.0.jar
   services:
     - zipkin_span_stream
   env:
     DEBUG: "true"
-    BACKOFFICEMICROSERVICE_ADDRESS: acme-financial-back-office-microservice-manneristic-scimitar.cfapps.io
+    BACKOFFICEMICROSERVICE_ADDRESS: acme-financial-back-office-microservice.aws.ie.a9sapp.eu
